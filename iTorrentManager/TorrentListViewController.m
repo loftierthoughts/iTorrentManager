@@ -13,9 +13,10 @@
 #import "Torrent.h"
 #import "TorrentCellController.h"
 #import "TorrentPersistenceManager.h"
+#import "TorrentDetailsViewController.h"
 @implementation TorrentListViewController
 @synthesize torrentTable;
-
+Torrent *selectedTorrent;
 
 - (void)viewDidLoad
 {
@@ -28,6 +29,7 @@
     [torrentTable reloadData];
 }
 -(void)viewDidAppear:(BOOL)animated{
+    
     [self loadDataFromJSONFile];
     [torrentTable reloadData];
 }
@@ -78,18 +80,18 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //int idx=indexPath.row;
-   /* selectedContact = [contacts objectAtIndex:idx];
-    [self performSegueWithIdentifier:@"segueToContact" sender:nil];*/
+    int idx=indexPath.row;
+     selectedTorrent = [mytorrents objectAtIndex:idx];
+    [self performSegueWithIdentifier:@"segueToDetails" sender:nil];
     
 }
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-   /* if([segue.identifier isEqualToString:@"segueToContact"]){
-        ContactView *destination = (ContactView *) segue.destinationViewController;
-        destination->currentContact = selectedContact;
+    if([segue.identifier isEqualToString:@"segueToDetails"]){
+        TorrentDetailsViewController *destination = (TorrentDetailsViewController *) segue.destinationViewController;
+        destination->currentTorrent = selectedTorrent;
         
         
-    }*/
+    }
     
 }
 //-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{

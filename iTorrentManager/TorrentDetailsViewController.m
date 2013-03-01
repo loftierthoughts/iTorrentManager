@@ -9,5 +9,9 @@
 #import "TorrentDetailsViewController.h"
 
 @implementation TorrentDetailsViewController
-
+-(void)viewDidAppear:(BOOL)animated{
+    UIImage *aImage = [UIImage imageNamed:@"bg.png"];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:aImage];
+    [self.view setOpaque:NO];
+}
 @end

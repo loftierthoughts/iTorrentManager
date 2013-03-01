@@ -13,6 +13,7 @@
 #import "TorrentListViewController.h"
 @implementation AddTorrentViewController
 @synthesize torrentName,torrentURL,addButton;
+@synthesize torrentLabel,torretnNameLabel,torretnURLLabel;
 - (IBAction)addTorrentAction:(UIButton *)sender {
     if(![torrentName isEqual:@""]){
         if(![torrentURL isEqual:@""]){
@@ -33,7 +34,12 @@
     [addButton setEnabled:TRUE];
     torrentURL.text=@"";
     torrentName.text=@"";
-    
+    UIImage *aImage = [UIImage imageNamed:@"bg.png"];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:aImage];
+    [self.view setOpaque:NO];
+    [torretnURLLabel setTextColor:[UIColor colorWithRed:219/255.0f green:219/255.0f blue:219/255.0f alpha:1.0f]];
+    [torretnNameLabel setTextColor:[UIColor colorWithRed:219/255.0f green:219/255.0f blue:219/255.0f alpha:1.0f]];
+    [torrentLabel setTextColor:[UIColor colorWithRed:219/255.0f green:219/255.0f blue:219/255.0f alpha:1.0f]];
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{    
     

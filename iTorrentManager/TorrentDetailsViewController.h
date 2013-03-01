@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface TorrentDetailsViewController : UIViewController
+#import "Torrent.h"
+@interface TorrentDetailsViewController : UIViewController{
+    @public
+    Torrent *currentTorrent;
+}
 
 @end
