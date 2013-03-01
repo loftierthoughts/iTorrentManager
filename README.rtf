@@ -1,0 +1,32 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww33100\viewh19220\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 ### README ####\
+\
+\
+iTorrentManager - Votre gestionnaire de torrents\
+\
+\
+iTorrentManager vous permet de garder un oeil sur vos t\'e9l\'e9chargement de torrent en cours sur votre machine distante.\
+\
+iTorrentManager se connecte \'e0 une application distante qui fonctionne sur un serveur (ou sur votre machine au bureau, \'e0 la maison etc\'85).\
+\
+L'application distante communique avec le client torrent Open-Source "Transmission", et fournie une api afin de communiquer avec ce dernier.\
+\
+Sch\'e9ma de fonctionnement : \
+\
+	
+\b iPhone		       internet						Machine distante
+\b0 	\
+	iTorrent	<------------------------------>		Appli serveur    <----->   client torrent "Transmission"\
+\
+\
+\
+Dans notre cas, ne pouvant d\'e9velopper la partie serveur ( une proof of concept a \'e9t\'e9 faite en java ), les requ\'eates sur l'api sont simul\'e9es au moyens d'un fichier json(lecture/\'e9criture)\
+\
+Vous pouvez cependant ajouter des torrents, ceux ci seront persist\'e9s (pendant la dur\'e9e de vie de l'application), et l'\'e9volution du t\'e9l\'e9chargement est simul\'e9.\
+\
+La page param\'e8tre ne pr\'e9sente aucun int\'e9r\'eat sans une vrai connexion au serveur, mais elle est pr\'eate.}
