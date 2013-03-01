@@ -14,10 +14,13 @@
 @implementation AddTorrentViewController
 @synthesize torrentName,torrentURL,addButton;
 @synthesize torrentLabel,torretnNameLabel,torretnURLLabel;
-- (IBAction)addTorrentAction:(UIButton *)sender {
+- (IBAction)addTorrentAction:(UIButton *)sender {    
     if(![torrentName isEqual:@""]){
         if(![torrentURL isEqual:@""]){
             Torrent *newTorrent = [[Torrent alloc]initWith:torrentName.text AndURL:torrentURL.text];
+            newTorrent.size = 365.0;
+            newTorrent.seeders = 10254;
+            newTorrent.leechers = 898;
             NSMutableArray *torrentsArray = [TorrentPersistenceManager getTorrentsFromJSON];
             [torrentsArray addObject:newTorrent];
             NSMutableString *toWrite =[TorrentParser serialize:torrentsArray];

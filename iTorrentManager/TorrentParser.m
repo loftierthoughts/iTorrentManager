@@ -26,9 +26,14 @@
         id seeders = [[torrents objectForKey:key] objectForKey:@"seeders"];
         id leechers = [[torrents objectForKey:key] objectForKey:@"leechers"];
         id completion = [[torrents objectForKey:key] objectForKey:@"completion"];
+        id size =[[torrents objectForKey:key] objectForKey:@"completion"];
         
         Torrent *toReturn = [[Torrent alloc]initWith:name AndURL:url AndSeeders:[seeders integerValue] AndLeechers:[leechers integerValue]];
-        [toReturn setCompletion:[completion doubleValue]];
+        toReturn.size = [size doubleValue];
+        if(toReturn.completion <100)
+            [toReturn setCompletion:[completion doubleValue]+10];
+        else
+            [toReturn setCompletion:[completion doubleValue]];
         [toReturn setDate:date];
         [torrentObjectArray addObject:toReturn];
         
@@ -50,7 +55,7 @@
         double completion = [cur completion];
         //simulate completion evolution
         if(completion <100){
-           completion +=10;
+           completion +=5;
         }
         
         if(i!=0){

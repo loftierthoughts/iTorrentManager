@@ -44,6 +44,7 @@
 		E8A6708A16DFA7DA0045DA47 /* TorrentParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6708916DFA7DA0045DA47 /* TorrentParser.m */; };
 		E8A6709416DFB2EA0045DA47 /* TorrentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8A6709316DFB2EA0045DA47 /* TorrentCell.xib */; };
 		E8A6709716DFB30C0045DA47 /* TorrentCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6709616DFB30C0045DA47 /* TorrentCellController.m */; };
+		E8DD3A0B16E0F5D80063483A /* arrowRight.png in Resources */ = {isa = PBXBuildFile; fileRef = E8DD3A0A16E0F5D80063483A /* arrowRight.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +112,7 @@
 		E8A6709316DFB2EA0045DA47 /* TorrentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TorrentCell.xib; sourceTree = "<group>"; };
 		E8A6709516DFB30C0045DA47 /* TorrentCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentCellController.h; sourceTree = "<group>"; };
 		E8A6709616DFB30C0045DA47 /* TorrentCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentCellController.m; sourceTree = "<group>"; };
+		E8DD3A0A16E0F5D80063483A /* arrowRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowRight.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		E8A6700916DF8D850045DA47 = {
 			isa = PBXGroup;
 			children = (
+				E8DD3A0A16E0F5D80063483A /* arrowRight.png */,
 				E80FD53916E0DFFE00FFC6C4 /* bg.png */,
 				E8A6708616DF9DB10045DA47 /* torrents.json */,
 				E8A6705116DF92DF0045DA47 /* gearIcon.png */,
@@ -347,6 +350,7 @@
 				E8A6708716DF9DB10045DA47 /* torrents.json in Resources */,
 				E8A6709416DFB2EA0045DA47 /* TorrentCell.xib in Resources */,
 				E80FD53A16E0DFFE00FFC6C4 /* bg.png in Resources */,
+				E8DD3A0B16E0F5D80063483A /* arrowRight.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
