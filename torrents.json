@@ -17,7 +17,25 @@
                     'leechers':25,
                     'size' : 256.6,
                     'completion' : 50.0
-                  }
+                  },
+        'torrentx':{
+            'name': 'ubuntu-13.04',
+            'url' : 'http://cdn.ubuntu.com/distrib/s45484seFr',
+            'date':'',
+            'seeders': 2000,
+            'leechers':854,
+            'size' : 3400,
+            'completion' : 68.5
+        },
+        'torrenty':{
+            'name': 'AvengedSevenfold.nightmare-flac',
+            'url' : 'http://pirate.bay/sdfdsfRrbnMoof',
+            'date':'',
+            'seeders': 145,
+            'leechers':489,
+            'size' : 350,
+            'completion' : 68.5
+        }
     }
 
 }

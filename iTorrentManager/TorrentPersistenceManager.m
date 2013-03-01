@@ -37,6 +37,7 @@
     NSMutableDictionary *torrents = [jsonObjects objectForKey:@"torrents"];
     TorrentParser *torrentParser = [[TorrentParser alloc] init:torrents];
     NSMutableArray *torrentsToReturn = [torrentParser getTorrents];
+    
     return torrentsToReturn;
 }
 @end

@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ParametersViewController : UIViewController
+@interface ParametersViewController : UIViewController <UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *serverAddressLabel;
+@property (weak, nonatomic) IBOutlet UITextField *serverAddress;
+@property (weak, nonatomic) IBOutlet UILabel *tokenLabel;
+@property (weak, nonatomic) IBOutlet UITextField *token;
 
 @end

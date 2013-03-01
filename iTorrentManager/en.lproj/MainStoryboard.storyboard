@@ -314,7 +314,7 @@
                                     <constraint firstAttribute="width" constant="265" id="YxN-az-dJw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Security Token :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOh-dk-PxO">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -325,21 +325,42 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9s7-Ww-jS5">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="ab0-GI-ObW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="a8D-jH-J8A" firstAttribute="top" secondItem="vBo-Nq-MtC" secondAttribute="top" constant="161" id="5im-5K-PgO"/>
                             <constraint firstItem="nOh-dk-PxO" firstAttribute="top" secondItem="vBo-Nq-MtC" secondAttribute="top" constant="119" id="EuE-SG-d6O"/>
+                            <constraint firstAttribute="bottom" secondItem="9s7-Ww-jS5" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="HOT-xC-f1I"/>
                             <constraint firstItem="MAI-1W-8sv" firstAttribute="top" secondItem="vBo-Nq-MtC" secondAttribute="top" constant="63" id="I9L-Ci-tIR"/>
                             <constraint firstItem="U3m-3P-b1f" firstAttribute="leading" secondItem="vBo-Nq-MtC" secondAttribute="leading" constant="47" id="LYY-FL-vDy"/>
                             <constraint firstItem="nOh-dk-PxO" firstAttribute="centerX" secondItem="U3m-3P-b1f" secondAttribute="centerX" type="default" id="Q6h-6k-LLT"/>
                             <constraint firstItem="U3m-3P-b1f" firstAttribute="top" secondItem="vBo-Nq-MtC" secondAttribute="top" constant="20" symbolic="YES" type="default" id="RdJ-MU-gDh"/>
                             <constraint firstItem="a8D-jH-J8A" firstAttribute="trailing" secondItem="MAI-1W-8sv" secondAttribute="trailing" type="default" id="T0t-2a-iuM"/>
                             <constraint firstItem="MAI-1W-8sv" firstAttribute="leading" secondItem="vBo-Nq-MtC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="fKE-TD-l1l"/>
+                            <constraint firstItem="9s7-Ww-jS5" firstAttribute="leading" secondItem="nOh-dk-PxO" secondAttribute="leading" type="default" id="gch-OO-1IO"/>
                             <constraint firstItem="a8D-jH-J8A" firstAttribute="leading" secondItem="vBo-Nq-MtC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="wNr-UL-cV3"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Parameters" image="gearIcon.png" id="bta-9r-jUc"/>
+                    <connections>
+                        <outlet property="serverAddress" destination="MAI-1W-8sv" id="gi8-fr-8hb"/>
+                        <outlet property="serverAddressLabel" destination="U3m-3P-b1f" id="ao5-GL-LD4"/>
+                        <outlet property="token" destination="a8D-jH-J8A" id="bUc-AV-VjV"/>
+                        <outlet property="tokenLabel" destination="nOh-dk-PxO" id="KVn-jL-h3X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sYi-gE-pP0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -369,6 +390,12 @@
         </class>
         <class className="ParametersViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ParametersViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="serverAddress" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="serverAddressLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="token" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="tokenLabel" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="TorrentDetailsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TorrentDetailsViewController.h"/>
