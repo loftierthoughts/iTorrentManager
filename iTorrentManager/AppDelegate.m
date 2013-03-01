@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
+#import "TorrentPersistenceManager.h"
+#import "Torrent.h"
+#import "TorrentParser.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -26,6 +28,17 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    //completion evolution simulation
+    /*NSMutableArray *torrents = [TorrentPersistenceManager getTorrentsFromJSON];
+    for(int i=0;i<[torrents count];i++){
+        Torrent *cur = [torrents objectAtIndex:i];
+        cur.completion = 50.0;
+        [torrents insertObject:cur atIndex:i];
+    }
+    NSMutableString *toSave = [TorrentParser serialize:torrents];
+    [TorrentPersistenceManager writeJSONFile:toSave];*/
+    
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application

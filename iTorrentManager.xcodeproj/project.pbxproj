@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E80FD53816E09BC400FFC6C4 /* TorrentPersistenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FD53716E09BC400FFC6C4 /* TorrentPersistenceManager.m */; };
 		E8A6701616DF8D850045DA47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A6701516DF8D850045DA47 /* UIKit.framework */; };
 		E8A6701816DF8D850045DA47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A6701716DF8D850045DA47 /* Foundation.framework */; };
 		E8A6701A16DF8D860045DA47 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A6701916DF8D850045DA47 /* CoreGraphics.framework */; };
@@ -17,15 +18,36 @@
 		E8A6702A16DF8D860045DA47 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A6702916DF8D860045DA47 /* Default@2x.png */; };
 		E8A6702C16DF8D860045DA47 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A6702B16DF8D860045DA47 /* Default-568h@2x.png */; };
 		E8A6702F16DF8D860045DA47 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A6702D16DF8D860045DA47 /* MainStoryboard.storyboard */; };
-		E8A6703216DF8D860045DA47 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6703116DF8D860045DA47 /* FirstViewController.m */; };
-		E8A6703416DF8D860045DA47 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A6703316DF8D860045DA47 /* first.png */; };
-		E8A6703616DF8D860045DA47 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A6703516DF8D860045DA47 /* first@2x.png */; };
-		E8A6703916DF8D860045DA47 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6703816DF8D860045DA47 /* SecondViewController.m */; };
-		E8A6703B16DF8D860045DA47 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A6703A16DF8D860045DA47 /* second.png */; };
-		E8A6703D16DF8D860045DA47 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A6703C16DF8D860045DA47 /* second@2x.png */; };
+		E8A6704616DF8F980045DA47 /* TorrentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6704516DF8F980045DA47 /* TorrentListViewController.m */; };
+		E8A6704916DF90290045DA47 /* AddTorrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6704816DF90290045DA47 /* AddTorrentViewController.m */; };
+		E8A6704C16DF90DE0045DA47 /* ParametersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6704B16DF90DE0045DA47 /* ParametersViewController.m */; };
+		E8A6704E16DF917F0045DA47 /* listIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A6704D16DF917F0045DA47 /* listIcon.png */; };
+		E8A6705016DF92530045DA47 /* addIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A6704F16DF92530045DA47 /* addIcon.png */; };
+		E8A6705216DF92DF0045DA47 /* gearIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A6705116DF92DF0045DA47 /* gearIcon.png */; };
+		E8A6705516DF94900045DA47 /* TorrentDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6705416DF94900045DA47 /* TorrentDetailsViewController.m */; };
+		E8A6705916DF96350045DA47 /* Torrent.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6705816DF96350045DA47 /* Torrent.m */; };
+		E8A6707616DF999D0045DA47 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6705E16DF999D0045DA47 /* NSObject+SBJson.m */; };
+		E8A6707716DF999D0045DA47 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6706116DF999D0045DA47 /* SBJsonParser.m */; };
+		E8A6707816DF999D0045DA47 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6706316DF999D0045DA47 /* SBJsonStreamParser.m */; };
+		E8A6707916DF999D0045DA47 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6706516DF999D0045DA47 /* SBJsonStreamParserAccumulator.m */; };
+		E8A6707A16DF999D0045DA47 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6706716DF999D0045DA47 /* SBJsonStreamParserAdapter.m */; };
+		E8A6707B16DF999D0045DA47 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6706916DF999D0045DA47 /* SBJsonStreamParserState.m */; };
+		E8A6707C16DF999D0045DA47 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6706B16DF999D0045DA47 /* SBJsonStreamWriter.m */; };
+		E8A6707D16DF999D0045DA47 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6706D16DF999D0045DA47 /* SBJsonStreamWriterAccumulator.m */; };
+		E8A6707E16DF999D0045DA47 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6706F16DF999D0045DA47 /* SBJsonStreamWriterState.m */; };
+		E8A6707F16DF999D0045DA47 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6707116DF999D0045DA47 /* SBJsonTokeniser.m */; };
+		E8A6708016DF999D0045DA47 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6707316DF999D0045DA47 /* SBJsonUTF8Stream.m */; };
+		E8A6708116DF999D0045DA47 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6707516DF999D0045DA47 /* SBJsonWriter.m */; };
+		E8A6708516DF9A230045DA47 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6708416DF9A230045DA47 /* MBProgressHUD.m */; };
+		E8A6708716DF9DB10045DA47 /* torrents.json in Resources */ = {isa = PBXBuildFile; fileRef = E8A6708616DF9DB10045DA47 /* torrents.json */; };
+		E8A6708A16DFA7DA0045DA47 /* TorrentParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6708916DFA7DA0045DA47 /* TorrentParser.m */; };
+		E8A6709416DFB2EA0045DA47 /* TorrentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8A6709316DFB2EA0045DA47 /* TorrentCell.xib */; };
+		E8A6709716DFB30C0045DA47 /* TorrentCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A6709616DFB30C0045DA47 /* TorrentCellController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E80FD53616E09BC400FFC6C4 /* TorrentPersistenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentPersistenceManager.h; sourceTree = "<group>"; };
+		E80FD53716E09BC400FFC6C4 /* TorrentPersistenceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentPersistenceManager.m; sourceTree = "<group>"; };
 		E8A6701216DF8D850045DA47 /* iTorrentManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTorrentManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A6701516DF8D850045DA47 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E8A6701716DF8D850045DA47 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -40,14 +62,53 @@
 		E8A6702916DF8D860045DA47 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E8A6702B16DF8D860045DA47 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E8A6702E16DF8D860045DA47 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		E8A6703016DF8D860045DA47 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		E8A6703116DF8D860045DA47 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		E8A6703316DF8D860045DA47 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		E8A6703516DF8D860045DA47 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		E8A6703716DF8D860045DA47 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		E8A6703816DF8D860045DA47 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		E8A6703A16DF8D860045DA47 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		E8A6703C16DF8D860045DA47 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		E8A6704416DF8F980045DA47 /* TorrentListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentListViewController.h; sourceTree = "<group>"; };
+		E8A6704516DF8F980045DA47 /* TorrentListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentListViewController.m; sourceTree = "<group>"; };
+		E8A6704716DF90290045DA47 /* AddTorrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTorrentViewController.h; sourceTree = "<group>"; };
+		E8A6704816DF90290045DA47 /* AddTorrentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTorrentViewController.m; sourceTree = "<group>"; };
+		E8A6704A16DF90DE0045DA47 /* ParametersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParametersViewController.h; sourceTree = "<group>"; };
+		E8A6704B16DF90DE0045DA47 /* ParametersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParametersViewController.m; sourceTree = "<group>"; };
+		E8A6704D16DF917F0045DA47 /* listIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listIcon.png; sourceTree = "<group>"; };
+		E8A6704F16DF92530045DA47 /* addIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addIcon.png; sourceTree = "<group>"; };
+		E8A6705116DF92DF0045DA47 /* gearIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gearIcon.png; sourceTree = "<group>"; };
+		E8A6705316DF94900045DA47 /* TorrentDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentDetailsViewController.h; sourceTree = "<group>"; };
+		E8A6705416DF94900045DA47 /* TorrentDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentDetailsViewController.m; sourceTree = "<group>"; };
+		E8A6705716DF96350045DA47 /* Torrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Torrent.h; sourceTree = "<group>"; };
+		E8A6705816DF96350045DA47 /* Torrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Torrent.m; sourceTree = "<group>"; };
+		E8A6705C16DF999D0045DA47 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		E8A6705D16DF999D0045DA47 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		E8A6705E16DF999D0045DA47 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		E8A6705F16DF999D0045DA47 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		E8A6706016DF999D0045DA47 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		E8A6706116DF999D0045DA47 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		E8A6706216DF999D0045DA47 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		E8A6706316DF999D0045DA47 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		E8A6706416DF999D0045DA47 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		E8A6706516DF999D0045DA47 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		E8A6706616DF999D0045DA47 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		E8A6706716DF999D0045DA47 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		E8A6706816DF999D0045DA47 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		E8A6706916DF999D0045DA47 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		E8A6706A16DF999D0045DA47 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		E8A6706B16DF999D0045DA47 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		E8A6706C16DF999D0045DA47 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		E8A6706D16DF999D0045DA47 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		E8A6706E16DF999D0045DA47 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		E8A6706F16DF999D0045DA47 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		E8A6707016DF999D0045DA47 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		E8A6707116DF999D0045DA47 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		E8A6707216DF999D0045DA47 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		E8A6707316DF999D0045DA47 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		E8A6707416DF999D0045DA47 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		E8A6707516DF999D0045DA47 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		E8A6708316DF9A230045DA47 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		E8A6708416DF9A230045DA47 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		E8A6708616DF9DB10045DA47 /* torrents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = torrents.json; sourceTree = "<group>"; };
+		E8A6708816DFA7DA0045DA47 /* TorrentParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentParser.h; sourceTree = "<group>"; };
+		E8A6708916DFA7DA0045DA47 /* TorrentParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentParser.m; sourceTree = "<group>"; };
+		E8A6709316DFB2EA0045DA47 /* TorrentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TorrentCell.xib; sourceTree = "<group>"; };
+		E8A6709516DFB30C0045DA47 /* TorrentCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentCellController.h; sourceTree = "<group>"; };
+		E8A6709616DFB30C0045DA47 /* TorrentCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentCellController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +128,10 @@
 		E8A6700916DF8D850045DA47 = {
 			isa = PBXGroup;
 			children = (
+				E8A6708616DF9DB10045DA47 /* torrents.json */,
+				E8A6705116DF92DF0045DA47 /* gearIcon.png */,
+				E8A6704D16DF917F0045DA47 /* listIcon.png */,
+				E8A6704F16DF92530045DA47 /* addIcon.png */,
 				E8A6701B16DF8D860045DA47 /* iTorrentManager */,
 				E8A6701416DF8D850045DA47 /* Frameworks */,
 				E8A6701316DF8D850045DA47 /* Products */,
@@ -94,17 +159,14 @@
 		E8A6701B16DF8D860045DA47 /* iTorrentManager */ = {
 			isa = PBXGroup;
 			children = (
+				E8A6708C16DFB1550045DA47 /* XIBTemplate */,
+				E8A6708B16DFA8320045DA47 /* utils */,
+				E8A6705A16DF99830045DA47 /* Classes */,
+				E8A6705616DF95F40045DA47 /* Models */,
+				E8A6704316DF8E2F0045DA47 /* ViewControllers */,
 				E8A6702416DF8D860045DA47 /* AppDelegate.h */,
 				E8A6702516DF8D860045DA47 /* AppDelegate.m */,
 				E8A6702D16DF8D860045DA47 /* MainStoryboard.storyboard */,
-				E8A6703016DF8D860045DA47 /* FirstViewController.h */,
-				E8A6703116DF8D860045DA47 /* FirstViewController.m */,
-				E8A6703316DF8D860045DA47 /* first.png */,
-				E8A6703516DF8D860045DA47 /* first@2x.png */,
-				E8A6703716DF8D860045DA47 /* SecondViewController.h */,
-				E8A6703816DF8D860045DA47 /* SecondViewController.m */,
-				E8A6703A16DF8D860045DA47 /* second.png */,
-				E8A6703C16DF8D860045DA47 /* second@2x.png */,
 				E8A6701C16DF8D860045DA47 /* Supporting Files */,
 			);
 			path = iTorrentManager;
@@ -122,6 +184,102 @@
 				E8A6702B16DF8D860045DA47 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8A6704316DF8E2F0045DA47 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E8A6704416DF8F980045DA47 /* TorrentListViewController.h */,
+				E8A6704516DF8F980045DA47 /* TorrentListViewController.m */,
+				E8A6704716DF90290045DA47 /* AddTorrentViewController.h */,
+				E8A6704816DF90290045DA47 /* AddTorrentViewController.m */,
+				E8A6704A16DF90DE0045DA47 /* ParametersViewController.h */,
+				E8A6704B16DF90DE0045DA47 /* ParametersViewController.m */,
+				E8A6705316DF94900045DA47 /* TorrentDetailsViewController.h */,
+				E8A6705416DF94900045DA47 /* TorrentDetailsViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E8A6705616DF95F40045DA47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E8A6705716DF96350045DA47 /* Torrent.h */,
+				E8A6705816DF96350045DA47 /* Torrent.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E8A6705A16DF99830045DA47 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E8A6708216DF9A020045DA47 /* MBProgressHUD */,
+				E8A6705B16DF99880045DA47 /* JSON */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		E8A6705B16DF99880045DA47 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				E8A6705C16DF999D0045DA47 /* JSON.h */,
+				E8A6705D16DF999D0045DA47 /* NSObject+SBJson.h */,
+				E8A6705E16DF999D0045DA47 /* NSObject+SBJson.m */,
+				E8A6705F16DF999D0045DA47 /* SBJson.h */,
+				E8A6706016DF999D0045DA47 /* SBJsonParser.h */,
+				E8A6706116DF999D0045DA47 /* SBJsonParser.m */,
+				E8A6706216DF999D0045DA47 /* SBJsonStreamParser.h */,
+				E8A6706316DF999D0045DA47 /* SBJsonStreamParser.m */,
+				E8A6706416DF999D0045DA47 /* SBJsonStreamParserAccumulator.h */,
+				E8A6706516DF999D0045DA47 /* SBJsonStreamParserAccumulator.m */,
+				E8A6706616DF999D0045DA47 /* SBJsonStreamParserAdapter.h */,
+				E8A6706716DF999D0045DA47 /* SBJsonStreamParserAdapter.m */,
+				E8A6706816DF999D0045DA47 /* SBJsonStreamParserState.h */,
+				E8A6706916DF999D0045DA47 /* SBJsonStreamParserState.m */,
+				E8A6706A16DF999D0045DA47 /* SBJsonStreamWriter.h */,
+				E8A6706B16DF999D0045DA47 /* SBJsonStreamWriter.m */,
+				E8A6706C16DF999D0045DA47 /* SBJsonStreamWriterAccumulator.h */,
+				E8A6706D16DF999D0045DA47 /* SBJsonStreamWriterAccumulator.m */,
+				E8A6706E16DF999D0045DA47 /* SBJsonStreamWriterState.h */,
+				E8A6706F16DF999D0045DA47 /* SBJsonStreamWriterState.m */,
+				E8A6707016DF999D0045DA47 /* SBJsonTokeniser.h */,
+				E8A6707116DF999D0045DA47 /* SBJsonTokeniser.m */,
+				E8A6707216DF999D0045DA47 /* SBJsonUTF8Stream.h */,
+				E8A6707316DF999D0045DA47 /* SBJsonUTF8Stream.m */,
+				E8A6707416DF999D0045DA47 /* SBJsonWriter.h */,
+				E8A6707516DF999D0045DA47 /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		E8A6708216DF9A020045DA47 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				E8A6708316DF9A230045DA47 /* MBProgressHUD.h */,
+				E8A6708416DF9A230045DA47 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		E8A6708B16DFA8320045DA47 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				E8A6708816DFA7DA0045DA47 /* TorrentParser.h */,
+				E8A6708916DFA7DA0045DA47 /* TorrentParser.m */,
+				E80FD53616E09BC400FFC6C4 /* TorrentPersistenceManager.h */,
+				E80FD53716E09BC400FFC6C4 /* TorrentPersistenceManager.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		E8A6708C16DFB1550045DA47 /* XIBTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E8A6709316DFB2EA0045DA47 /* TorrentCell.xib */,
+				E8A6709516DFB30C0045DA47 /* TorrentCellController.h */,
+				E8A6709616DFB30C0045DA47 /* TorrentCellController.m */,
+			);
+			name = XIBTemplate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,10 +338,11 @@
 				E8A6702A16DF8D860045DA47 /* Default@2x.png in Resources */,
 				E8A6702C16DF8D860045DA47 /* Default-568h@2x.png in Resources */,
 				E8A6702F16DF8D860045DA47 /* MainStoryboard.storyboard in Resources */,
-				E8A6703416DF8D860045DA47 /* first.png in Resources */,
-				E8A6703616DF8D860045DA47 /* first@2x.png in Resources */,
-				E8A6703B16DF8D860045DA47 /* second.png in Resources */,
-				E8A6703D16DF8D860045DA47 /* second@2x.png in Resources */,
+				E8A6704E16DF917F0045DA47 /* listIcon.png in Resources */,
+				E8A6705016DF92530045DA47 /* addIcon.png in Resources */,
+				E8A6705216DF92DF0045DA47 /* gearIcon.png in Resources */,
+				E8A6708716DF9DB10045DA47 /* torrents.json in Resources */,
+				E8A6709416DFB2EA0045DA47 /* TorrentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +355,27 @@
 			files = (
 				E8A6702216DF8D860045DA47 /* main.m in Sources */,
 				E8A6702616DF8D860045DA47 /* AppDelegate.m in Sources */,
-				E8A6703216DF8D860045DA47 /* FirstViewController.m in Sources */,
-				E8A6703916DF8D860045DA47 /* SecondViewController.m in Sources */,
+				E8A6704616DF8F980045DA47 /* TorrentListViewController.m in Sources */,
+				E8A6704916DF90290045DA47 /* AddTorrentViewController.m in Sources */,
+				E8A6704C16DF90DE0045DA47 /* ParametersViewController.m in Sources */,
+				E8A6705516DF94900045DA47 /* TorrentDetailsViewController.m in Sources */,
+				E8A6705916DF96350045DA47 /* Torrent.m in Sources */,
+				E8A6707616DF999D0045DA47 /* NSObject+SBJson.m in Sources */,
+				E8A6707716DF999D0045DA47 /* SBJsonParser.m in Sources */,
+				E8A6707816DF999D0045DA47 /* SBJsonStreamParser.m in Sources */,
+				E8A6707916DF999D0045DA47 /* SBJsonStreamParserAccumulator.m in Sources */,
+				E8A6707A16DF999D0045DA47 /* SBJsonStreamParserAdapter.m in Sources */,
+				E8A6707B16DF999D0045DA47 /* SBJsonStreamParserState.m in Sources */,
+				E8A6707C16DF999D0045DA47 /* SBJsonStreamWriter.m in Sources */,
+				E8A6707D16DF999D0045DA47 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				E8A6707E16DF999D0045DA47 /* SBJsonStreamWriterState.m in Sources */,
+				E8A6707F16DF999D0045DA47 /* SBJsonTokeniser.m in Sources */,
+				E8A6708016DF999D0045DA47 /* SBJsonUTF8Stream.m in Sources */,
+				E8A6708116DF999D0045DA47 /* SBJsonWriter.m in Sources */,
+				E8A6708516DF9A230045DA47 /* MBProgressHUD.m in Sources */,
+				E8A6708A16DFA7DA0045DA47 /* TorrentParser.m in Sources */,
+				E8A6709716DFB30C0045DA47 /* TorrentCellController.m in Sources */,
+				E80FD53816E09BC400FFC6C4 /* TorrentPersistenceManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +498,7 @@
 				E8A6704216DF8D860045DA47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

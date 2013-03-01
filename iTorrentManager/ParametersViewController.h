@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  ParametersViewController.h
 //  iTorrentManager
 //
 //  Created by USERCCI on 28/02/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface ParametersViewController : UIViewController
 
 @end
