@@ -25,11 +25,16 @@
             [torrentsArray addObject:newTorrent];
             NSMutableString *toWrite =[TorrentParser serialize:torrentsArray];
             [TorrentPersistenceManager writeJSONFile:toWrite];
-            [addButton setEnabled:FALSE];
+            [self performSegueWithIdentifier:@"segueFromAddToList" sender:nil];
         }
         
     }
     
+}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"segueFromAddToList"]){
+        UITabBarController *destination = (UITabBarController *) segue.destinationViewController;
+    }
 }
 -(void)viewDidAppear:(BOOL)animated{    
     torrentName.delegate = self;    
